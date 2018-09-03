@@ -1,4 +1,4 @@
-# Python Program to Read a List of names and Return the Length of the Longest One
+# Python Program to Read a List of names and Return the the Longest One
 
 names = [str(x) for x in input('Enter name seperated by comma: ').split(',')]
 print(names)
