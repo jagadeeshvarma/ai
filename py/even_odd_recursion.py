@@ -7,6 +7,6 @@ def even_odd(n):
         return even_odd(n-2)
 
 if even_odd(number) == True:
-    print('\nEven number\n')
+    print('\nEven number\na')
 else:
     print('\nOdd number\n')
