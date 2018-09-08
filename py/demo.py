@@ -1,15 +1,62 @@
-class Wolf:
-    def __init__(self,name,color):
-        self.name = name
-        self.color = color
-    def bark(self):
-        print('Grrrr.....')
+print('\n**************************************************')
+print('*  This program gives you the result of below    *')
+print('*  math operations performed on given input a,b   *')
+print('*    → Addition ( + )                            * ')
+print('*    → Mulitplication ( * )                      *')
+print('*    → Substraction ( -  )                       *')
+print('*    → Division ( / )                            *')
+print('*    → Mod ( % )                                 *')
+print('*    → Power ( ** )                              *')
+print('*    → Quotient ( // )                           *')
+print('**************************************************\n')
 
-class Dog(Wolf):
-    pass
-    # def bark(self):
-    #     print('Woof! Woof!')
 
-my_dog = Dog('Raju','Black')
-print(my_dog.name,my_dog.color)
-my_dog.bark()
+class Calc:
+    def __init__(self,a,b):
+        self.a = a
+        self.b = b
+    def add(self):
+      return self.a+self.b
+    def sub(self):
+      return self.a-self.b
+    def mult(self):
+      return self.a*-self.b
+    def div(self):
+      return self.a/self.b
+    def mod(self):
+      return self.a%self.b
+    def pow(self):
+      return self.a**self.b
+    def true_div(self):
+      return self.a//self.b
+
+a = int(input('Enter a: '))
+b = int(input('Enter b: '))
+c = Calc(a,b)
+choice = 1
+
+while choice != 0:
+  print('Enter any below operation to perform.\n  +  -  *  /  %  **  //  : ',end='')
+  op = input()
+  if op == '+':
+    print(c.add())
+  elif op == '-':
+    print(c.sub())
+  elif op == '*':
+    print(c.mult())
+  elif op == '/':
+    print(c.div())
+  elif op == '%':
+    print(c.mod())
+  elif op == '**':
+    print(c.pow())
+  elif op == '//':
+    print(c.true_div())
+  else:
+    print('Invalid Operation')
+  print('\n=====================================\n')
+  print('Enter your choice')
+  print('0 : Exit')
+  print('1 : Perform another operation')
+  print('(0/1): ',end='')
+  choice = int(input())
