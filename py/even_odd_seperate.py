@@ -3,7 +3,7 @@
 my_list = [eval(x) for x in input('Enter list of numbers seperated by space: ').split()]
 
 # Solution 1: Using list comprehention
-print('\n# Solution 1: Using list comprehention')
+print('\n# Solution 1: Using list comprehension')
 
 print('original list is: ',my_list)
 
@@ -26,6 +26,6 @@ for number in my_list:
         even_list.append(number)
     else:
         odd_list.append(number)
-        
+
 print('even list is: ',even_list)
 print('odd list is: ',odd_list)

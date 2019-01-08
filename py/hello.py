@@ -1,3 +1,10 @@
-message = input('Enter your name: ')
+# UnboundLocalError
 
-print('Hello, {}. Welcome to AI'.format(message))
+def a():
+    x = 4
+    def b():
+        nonlocal x
+        x += 1
+        print(x)
+    b()
+a()
