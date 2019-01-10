@@ -1,7 +1,0 @@
-This
-text
-is
-written
-using
-file
-write
